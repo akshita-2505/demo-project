@@ -1,4 +1,8 @@
+
+
+
 const express=require('express');
+const port = process.env.PORT || 8000;
 const request = require('supertest');
 var app = express();
 app.get('/',(req,res) => 
@@ -8,5 +12,5 @@ app.get('/',(req,res) =>
     });
 });
 
-app.listen(8000);
+app.listen(port);
 module.exports.app = app; 
